@@ -1,0 +1,246 @@
+@import "nib";
+@import "/import/_var.styl";
+
+*::-webkit-input-placeholder
+  color: #fff
+  opacity: 1
+
+*:-moz-placeholder
+  color: #fff
+  opacity: 1
+
+*::-moz-placeholder
+  color: #fff
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #fff
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #fff
+body input:required:valid,
+body textarea:required:valid
+  color: #fff
+
+//Custom Styles Here
+.soft-blur-overlay {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  opacity .5
+}
+
+.characters
+  margin: 275px 0 200px 0
+  height 1000px;
+  background: linear-gradient(to bottom, #fafcfd 80%, white)
+  position relative
+  width: 100%
+  .alpinist-right
+    position absolute
+    right 0
+    width 100%
+    height 100%
+    background-image: url(../img/alpinists-right.png)
+    background-repeat: no-repeat
+    background-position:  right
+    opacity .1
+  h3.title
+    @extend .characters .alpinist-right
+    display block
+    padding 535px 0 0 700px
+    color: rgba(0,0,0,0.1);
+    background-clip text
+    opacity 1
+    font-size: 100* $px_em
+    margin 0
+    font-weight: 200
+  .alpinist-left
+    @extend .characters .alpinist-right
+    left 0
+    width 100%
+    background-image: url(../img/alpinists-left.png)
+    opacity 1
+    background-position: left
+  .alpinist-list
+    position absolute
+    right 10%
+    bottom 5%
+    width 900px
+    ul
+      margin 0
+      padding 0
+      display inline-block
+      li
+        display inline-block
+        margin-right 45px
+        .img
+          width: 150px
+          height: 150px
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        .names
+          margin-top: 15px
+          font-size: 20px
+    .arrow-right
+      background-image: url(../img/arrow-right.png)
+      width 23px
+      height: 90px
+      cursor pointer
+      display inline-block
+      margin 0 0 58px 55px
+      opacity .2
+      transition all .5s ease
+      &:hover
+        opacity 1
+
+.story
+  position relative
+  height: 1000px
+  .story-bg
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width: 100%
+    background-image: url(../img/story-bg.png)
+    opacity .4
+    background-size 1920px auto
+    background-repeat: no-repeat
+    background-position: center top
+  .mountain-left
+    @extend .story .story-bg
+    opacity 1
+    bottom 0
+    background-image: url(../img/mountain-left.png)
+    background-position: center 163px
+  .story-text
+    position absolute
+    top 270px
+    right 85px
+    font-size: 20 * $px_em
+    line-height: 30 * $px_em
+    font-family: Avenir, sans-serif
+    width 600px
+    text-align: justify
+    z-index 3
+  .story-header
+    @extend .story .story-bg
+    opacity 1
+    margin 0
+    font-weight: 200
+    font-size: 100* $px_em
+    padding 370px 0 0 0
+    z-index 1
+    text-align center
+    color: transparent
+    background-clip text
+
+footer
+  padding-top 65px
+  margin-top 400px
+  width 100%;
+  height 1750px
+  background-image: url(../img/footer-bg.jpg)
+  background-size 1920px auto
+  text-align center
+  background-position: center
+  position relative
+  .footer-top
+    .footer-header
+      font-size: 83* $px_em
+      line-height 1
+      margin 0
+      color rgba(255,255,255,.5)
+      font-weight: 200
+      letter-spacing 15px
+      background-clip text
+  .footer-bottom
+    position absolute
+    height 50%
+    width 100%
+    bottom 0
+    background-image: url(../img/footer-bg.jpg);
+    background-position: bottom;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    &:before
+      content: ''
+      display: block
+      position absolute
+      height 100%
+      width 100%
+      bottom 0
+      opacity .3
+      background-color: white
+  .gallery-videos
+    position absolute
+    height 50%
+    width 100%
+    bottom 0
+    z-index 1
+    padding 135px 0
+    div
+      display inline-block
+      width: 600px
+      height: 600px
+      outline: 180px solid rgba(255,255,255,.8)
+      outline-offset: -180px
+      background-image url(../img/footer-gallery.jpg)
+      background-position: -174px 0px
+      position relative
+      margin-right 80px
+      cursor pointer
+      transition .8s all ease
+      overflow hidden
+      h4
+        margin 360px 0 0 67px
+        font-size: 63 *$px_em
+        background-clip text
+        color rgba(255,255,255,.4)
+        font-weight: 200
+        line-height: 1
+        transition .8s all ease
+      &:hover, &:active, &:focus
+        outline-color rgba(200,200,200,.8)
+        h4
+          margin-top 275px
+
+      &:after
+        content ''
+        position absolute
+        width 40%
+        height: 40%
+        background-color: transparent
+        box-shadow: 0 0 50px rgba(0,0,0,.5);
+        top 50%
+        left 50%
+        display: block
+        transform: translate(-50%, -50%)
+      &:last-child
+        margin-right 0
+        background-image url(../img/footer-videos.jpg)
+        background-position: -280px 0px
+  .copyright-part
+    position absolute
+    bottom 0
+    width 100%
+    height: 117px
+    background-image: url(../img/copyright-footer.png)
+    background-size 1920px auto
+    background-position: center
+    padding-top: 50px
+    font-family: Avenir, sans-serif
+    font-size: 17px
+    text-transform: lowercase
+    color white
+//ALWAYS END
+@import "/import/_media.styl";
+
+

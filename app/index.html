@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Everest</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- custom reset css -->
+	<style>*{box-sizing: border-box;}html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } article, aside, details, figcaption, figure,  footer, header, hgroup, menu, nav, section { 	display: block; box-sizing: border-box; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; } </style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>body{font-family:Bebas,sans-serif;font-size:25px;overflow-x:hidden}ul{margin:0;padding:0;list-style-type:none}header .header-top{padding:90px 0;min-height:1545px;background-image:url(../img/header-mountain.png);-webkit-background-size:1920px auto;-moz-background-size:1920px auto;background-size:1920px auto;background-position:center -38px;background-repeat:no-repeat;position:relative;z-index:2}header .header-top:before{position:absolute;top:253px;left:50%;-webkit-transform:translateX(-63%);-moz-transform:translateX(-63%);-o-transform:translateX(-63%);-ms-transform:translateX(-63%);transform:translateX(-63%);background-image:url(../img/header-mountain-top.png);background-repeat:no-repeat;background-position:top;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;width:396px;height:194px;content:'';z-index:1}header .header-bottom .promo,header .header-bottom .promo:after{-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}header .header-top h1{-webkit-background-clip:text;color:rgba(255,255,255,.5);letter-spacing:55px;text-align:center;font-weight:200;font-family:Steelfish,sans-serif;text-transform:uppercase;margin:0;font-size:10.8em;line-height:1}header .header-top .actors{display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:box;display:flex;-webkit-box-lines:multiple;-moz-box-lines:multiple;-o-box-lines:multiple;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:distribute;-moz-box-pack:distribute;-o-box-pack:distribute;-ms-flex-pack:distribute;-webkit-justify-content:space-around;justify-content:space-around;padding:0 180px;margin-top:640px;color:#dee1e4}header .header-top .actors li{vertical-align:center;text-align:center;-webkit-align-self:center;align-self:center;-ms-flex-item-align:center;padding:0 8px}header .header-top .actors li p{font-size:.88em}header .header-top .actors li p b{font-weight:400;font-size:1.24em}header .header-top .actors .and{font-size:.64em}header .header-bottom{margin-bottom:-320px;padding-bottom:125px;position:relative;width:100%;left:0;top:-320px;background:-webkit-radial-gradient(left bottom,farthest-side,#bfbfbf 500px,#fff);background:-moz-radial-gradient(left bottom,farthest-side,#bfbfbf 500px,#fff);background:-o-radial-gradient(left bottom,farthest-side,#bfbfbf 500px,#fff);background:-ms-radial-gradient(left bottom,farthest-side,#bfbfbf 500px,#fff);background:radial-gradient(to right top,farthest-side,#bfbfbf 500px,#fff);text-align:center}header .header-bottom h4{font-size:3.32em;letter-spacing:15px;text-align:center;margin:0;line-height:1;opacity:.07;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=7)";filter:alpha(opacity=7)}header .header-bottom .promo{width:600px;height:600px;outline:rgba(255,255,255,.8) solid 180px;outline-offset:-180px;background-image:url(../img/promo-picture.jpg);background-position:-170px -30px;position:relative;left:50%;top:500px;transform:translate(-50%,-50%)}header .header-bottom .promo:after{content:'';position:absolute;width:40%;height:40%;background-color:transparent;-webkit-box-shadow:0 0 50px rgba(0,0,0,.5);box-shadow:0 0 50px rgba(0,0,0,.5);top:50%;left:50%;display:block;transform:translate(-50%,-50%)}header .header-bottom .promo p{position:absolute;width:1250px;display:block;top:50%;left:50%;margin:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:-webkit-radial-gradient(circle closest-side,#bcbec2 119px,#6d6d71 120px);background:-moz-radial-gradient(circle closest-side,#bcbec2 119px,#6d6d71 120px);background:-o-radial-gradient(circle closest-side,#bcbec2 119px,#6d6d71 120px);background:-ms-radial-gradient(circle closest-side,#bcbec2 119px,#6d6d71 120px);background:radial-gradient(circle closest-side,#bcbec2 119px,#6d6d71 120px);-webkit-background-clip:text;color:transparent;letter-spacing:2px}header .trailer{margin-top:400px;letter-spacing:2px}header .trailer .button{width:91px;height:91px;-webkit-border-radius:91px;border-radius:91px;background-image:url(../img/button-watch.png);opacity:.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);cursor:pointer;display:inline-block;-webkit-transition:-webkit-transform .8s ease-in-out 0s;-moz-transition:-moz-transform .8s ease-in-out 0s;-o-transition:-o-transform .8s ease-in-out 0s;-ms-transition:-ms-transform .8s ease-in-out 0s;transition:transform .8s ease-in-out 0s}header .trailer .button:active,header .trailer .button:focus,header .trailer .button:hover{opacity:1;-ms-filter:none;filter:none;-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);z-index:1000}header .cloud{position:absolute;bottom:0;width:100%;height:50%;background-position:top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}header .cloud-left{left:0;background-image:url(../img/cloud-left.png)}header .cloud-right{right:0;background-image:url(../img/cloud-right.png)}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "/css/fonts.min.css?ver=1.0.0" );</script>
+	<!--<script>loadCSS( "/css/header.css?ver=1.0.0", false, "all" );</script>-->
+	<script>loadCSS( "/css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "/libs/animate/animate.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="libs/animate/animate.min.css">
+	</noscript>
+
+</head>
+
+<body>
+	<!-- Здесь пишем код -->
+	<header>
+		<div class="header-top">
+			<h1>Everest</h1>
+			<ul class="actors">
+				<li>
+					<p>Jason<br><b>Clarke</b></p>
+				</li>
+				<li>
+					<p>Josh<br><b>Brolin</b></p>
+				</li>
+				<li>
+					<p>John<br><b>Hawkes</b></p>
+				</li>
+				<li>
+					<p>Robin<br><b>Wright</b></p>
+				</li>
+				<li>
+					<p>Emily<br><b>Whatson</b></p>
+				</li>
+				<li>
+					<p>Keira<br><b>Knighntly</b></p>
+				</li>
+				<li>
+					<p>Sam<br><b>Worthington</b></p>
+				</li>
+				<li>
+					<p class="and">and</p>
+				</li>
+				<li>
+					<p>Jake<br><b>Gyllengall</b></p>
+				</li>
+			</ul>
+
+		</div>
+		<div class="header-bottom">
+			<h4>based on the incredible true story</h4>
+			<div class="promo">
+				<p>Inspired by the incredible events surrounding an attempt to reach the summit of the world's highest mountain</p>
+			</div>
+
+			<div class="cloud-left cloud"></div>
+			<div class="cloud-right cloud"></div>
+
+			<div class="trailer">
+				<p>Watch trailer</p>
+				<div class="button"></div>
+			</div>
+
+		</div>
+
+
+	</header>
+	<section class="characters">
+		<div class="alpinist-left"></div>
+		<div class="alpinist-right"></div>
+		<h3 class="title">Characters</h3>
+		<div class="alpinist-list">
+			<ul>
+			<li>
+				<div class="img" style="background-image: url(img/characters/Rob_Hall.jpg); background-position: -10px -9px"></div>
+				<p class="names">Rob Hall</p>
+			</li>
+			<li>
+				<div class="img" style="background-image: url(img/characters/Beck_Weathers.jpg); background-position: -6px -22px"></div>
+				<p class="names">Beck Weathers</p>
+			</li>
+			<li>
+				<div class="img" style="background-image: url(img/characters/Scot_Fischer.jpg); background-position: -37px -2px"></div>
+				<p class="names">Scott Fischer</p>
+			</li>
+			<li>
+				<div class="img" style="background-image: url(img/characters/Helen_Wintor.jpg); background-position: -40px -44px"></div>
+				<p class="names">Helen Wilton</p>
+			</li>
+		</ul>
+			<div class="arrow-right"></div>
+		</div>
+	</section>
+	<section class="story">
+		<div class="story-bg"></div>
+		<h3 class="story-header">Story</h3>
+		<p class="story-text">On the morning of May 10, 1996, climbers (Jason Clarke, Josh Brolin) from two expeditions start their final ascent toward the summit of Mount Everest, the highest point on Earth. With little warning, a violent storm strikes the mountain, engulfing the adventurers in one of the fiercest blizzards ever encountered by man. Challenged by the harshest conditions imaginable, the teams must endure blistering winds and freezing temperatures in an epic battle to survive against nearly impossible odds.</p>
+		<div class="mountain-left"></div>
+	</section>
+	<footer>
+		<div class="footer-top">
+			<h3 class="footer-header">Never let go</h3>
+		</div>
+		<div class="gallery-videos">
+			<div class="gallery"><h4>gallery</h4></div>
+			<div class="videos"><h4>videos</h4></div>
+		</div>
+		<div class="footer-bottom"></div>
+		<div class="copyright-part">everest @2015</div>
+	</footer>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
